@@ -1,0 +1,22 @@
+{
+  "name": "ejercicioexpress",
+  "version": "1.0.0",
+  "description": "Ejercicio framework Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulDiaz054/EjercicioExpress.git"
+  },
+  "author": "Paul Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulDiaz054/EjercicioExpress/issues"
+  },
+  "homepage": "https://github.com/PaulDiaz054/EjercicioExpress#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
