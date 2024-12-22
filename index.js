@@ -48,7 +48,7 @@ app.get("/rectangulo/:base&:altura", (req, res) => {
 app.get("/pentagono/:lado&:apotema", (req, res) => {
   let lado = parseInt(req.params.lado);
   let apot = parseInt(req.params.apotema);
-  let per = lado * 6;
+  let per = lado * 5;
   let area = (per * apot) / 2;
   res.send("el area es: " + area + ", el perimetro es: " + per);
 });
@@ -61,6 +61,13 @@ app.get("/rombo/:dmenor&:dmayor&:lado", (req, res) => {
   let area = (dmayor * dmenor) / 2;
   res.send("el area es: " + area + ", el perimetro es: " + per);
 });
+
+app.get("/trinomio/:a&:b", (req, res) => {
+  let a = parseInt(req.params.a);
+  let b = parseInt(req.params.b);
+  res.send("el resultado es: (" + Math.sqrt(a) + "+" + Math.sqrt(b)+ ")^2");
+});
+
 app.listen(3000, () => {
   console.log("Servicio corriendo...");
 });
